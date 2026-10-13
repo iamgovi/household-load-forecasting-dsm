@@ -1,0 +1,21 @@
+{
+  "model": "HoltWinters",
+  "split": "validation",
+  "research_eligible": true,
+  "run_id": "HoltWinters_validation",
+  "created_at_utc": "2026-09-15T20:57:10.484676+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_origins": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/validation_origins.csv",
+  "test_predictions_generated": false,
+  "lookback": 168,
+  "horizon": 24,
+  "training_time_seconds": 11835.813234332021,
+  "configuration": {
+    "trend": true,
+    "damped_trend": true,
+    "selection": "lowest RMSE on first 5 meters, first 2 validation origins"
+  },
+  "successful_origins": 1688,
+  "failed_origins": 111,
+  "meters": 53
+}

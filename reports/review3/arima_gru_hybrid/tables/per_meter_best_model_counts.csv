@@ -1,0 +1,5 @@
+Model,Meters_with_lowest_RMSE
+XGBoost,27
+LinearRegression,23
+SeasonalNaive_Daily,4
+ARIMA-GRU,4

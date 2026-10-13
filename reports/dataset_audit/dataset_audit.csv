@@ -1,0 +1,3 @@
+city,source_file,raw_rows,raw_meters,retained_meters,invalid_timestamps,representative_meter,timestamp_column,load_column,nominal_sampling_seconds
+Bareilly,archive (1)/CEEW - Smart meter data Bareilly 2020.csv,6627360,46,43,0,BR02,x_Timestamp,t_kWh,180
+Mathura,archive (1)/CEEW - Smart meter data Mathura 2020.csv,3759360,38,19,0,MH01,x_Timestamp,t_kWh,180

@@ -1,0 +1,2 @@
+Meters,Attention_improved,Attention_worsened,Approximately_tied_abs_RMSE_delta_le_1e-4,Attention_median_MAE,Attention_median_RMSE,Attention_overall_best_meters
+58,3,55,0,0.15079981840833334,0.1836349979880444,0

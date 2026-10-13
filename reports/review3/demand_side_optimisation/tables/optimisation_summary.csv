@@ -1,0 +1,6 @@
+Metric,Unit,Before,After,Change,Change_pct
+Electricity Cost,INR,97.64381411,88.64381411,-9.0,-9.217173747290442
+Peak Load,kW equivalent hourly average,2.34056777,2.34056777,0.0,0.0
+Peak-to-Average Ratio,ratio,3.5883251170730794,3.5883251170730794,0.0,0.0
+Flexible Energy,kWh,6.6,6.6,0.0,0.0
+Shifted Energy,kWh,,4.6,4.6,

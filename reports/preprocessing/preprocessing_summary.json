@@ -1,0 +1,38 @@
+{
+  "random_seed": 42,
+  "forecast_horizon_hours": 24,
+  "input_window_hours": 168,
+  "resample_frequency": "1h",
+  "expected_readings_per_hour": 20,
+  "minimum_hourly_coverage": 1.0,
+  "gap_policy": "No imputation; only hours with >=20 valid readings are usable",
+  "meter_retention_threshold": 0.6,
+  "raw_meters": 84,
+  "retained_meters": 62,
+  "retained_by_city": {
+    "Bareilly": 43,
+    "Mathura": 19
+  },
+  "hourly_rows": 516528,
+  "valid_hourly_rows": 447312,
+  "partial_hourly_rows": 0,
+  "fully_missing_hourly_rows": 69216,
+  "true_zero_valid_hours": 34895,
+  "split_rows": {
+    "train": 361533,
+    "validation": 77449,
+    "test": 77546
+  },
+  "usable_windows": {
+    "train": 211669,
+    "validation": 41818,
+    "test": 41219
+  },
+  "dropped_windows_missing": {
+    "train": 138022,
+    "validation": 23919,
+    "test": 24614
+  },
+  "scaling": "None; model scalers must fit train only",
+  "legacy_root_splits_modified": false
+}

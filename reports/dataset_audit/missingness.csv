@@ -1,0 +1,13 @@
+city,column,missing_count,missing_pct
+Bareilly,x_Timestamp,0,0.0
+Bareilly,t_kWh,0,0.0
+Bareilly,z_Avg Voltage (Volt),0,0.0
+Bareilly,z_Avg Current (Amp),0,0.0
+Bareilly,y_Freq (Hz),0,0.0
+Bareilly,meter,0,0.0
+Mathura,x_Timestamp,0,0.0
+Mathura,t_kWh,0,0.0
+Mathura,z_Avg Voltage (Volt),0,0.0
+Mathura,z_Avg Current (Amp),0,0.0
+Mathura,y_Freq (Hz),0,0.0
+Mathura,meter,0,0.0

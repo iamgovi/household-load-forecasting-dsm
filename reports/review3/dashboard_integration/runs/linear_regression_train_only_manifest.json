@@ -1,0 +1,12 @@
+{
+  "model": "LinearRegression",
+  "purpose": "experimental dashboard inference",
+  "research_comparison_eligible": false,
+  "training_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_data_used": false,
+  "test_data_used": false,
+  "lookback": 168,
+  "horizon": 24,
+  "training_windows": 9122,
+  "created_at_utc": "2026-09-16T05:30:13.828392+00:00"
+}

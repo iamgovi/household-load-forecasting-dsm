@@ -1,0 +1,25 @@
+model,city,meter,split,forecast_origin,horizon,target_timestamp,actual,prediction,inference_time_ms,run_id
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,1,2020-09-06 04:00:00,0.532,0.36889797,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,2,2020-09-06 05:00:00,0.498,0.40440735,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,3,2020-09-06 06:00:00,0.432,0.36231,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,4,2020-09-06 07:00:00,0.479,0.34056777,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,5,2020-09-06 08:00:00,0.36,0.3681111,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,6,2020-09-06 09:00:00,0.704,0.3337732,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,7,2020-09-06 10:00:00,0.272,0.328441,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,8,2020-09-06 11:00:00,0.337,0.38733777,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,9,2020-09-06 12:00:00,0.734,0.35058025,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,10,2020-09-06 13:00:00,0.373,0.3624698,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,11,2020-09-06 14:00:00,0.285,0.43979147,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,12,2020-09-06 15:00:00,0.287,0.4396255,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,13,2020-09-06 16:00:00,0.288,0.3822474,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,14,2020-09-06 17:00:00,0.373,0.3478722,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,15,2020-09-06 18:00:00,0.266,0.32655308,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,16,2020-09-06 19:00:00,0.73,0.33896095,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,17,2020-09-06 20:00:00,0.279,0.33260146,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,18,2020-09-06 21:00:00,0.39,0.30705398,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,19,2020-09-06 22:00:00,0.579,0.42804444,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,20,2020-09-06 23:00:00,0.509,0.39895356,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,21,2020-09-07 00:00:00,0.509,0.36842513,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,22,2020-09-07 01:00:00,0.52,0.43656194,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,23,2020-09-07 02:00:00,0.516,0.43173566,0.0045217198443557,LinearRegression_validation
+LinearRegression,Bareilly,BR02,validation,2020-09-06 03:00:00,24,2020-09-07 03:00:00,0.522,0.46923023,0.0045217198443557,LinearRegression_validation

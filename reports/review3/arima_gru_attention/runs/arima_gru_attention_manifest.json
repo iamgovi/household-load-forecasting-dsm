@@ -1,0 +1,56 @@
+{
+  "model": "ARIMA-GRU-Attention",
+  "split": "validation",
+  "research_eligible": true,
+  "run_id": "ARIMA-GRU-Attention_validation_1789495501",
+  "created_at_utc": "2026-09-15T18:05:11.093557+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/validation.csv",
+  "test_data_loaded": false,
+  "test_predictions_generated": false,
+  "residual_pipeline": "identical Milestone-4 functions",
+  "residuals_match_frozen_baseline": true,
+  "training_residual_rows": 286079,
+  "training_windows": 8289,
+  "successful_validation_origins": 1794,
+  "failed_validation_origins": 5,
+  "meters": 58,
+  "architecture": "unidirectional 1-layer GRU, 32 hidden, additive temporal softmax attention over 168 states, direct 24 output",
+  "parameter_count": 5240,
+  "attention_type": "temporal",
+  "attention_axis": "history_time",
+  "attention_weight_shape": [
+    1794,
+    168
+  ],
+  "scaler": {
+    "input_residual_mean": 0.03395071253180504,
+    "input_residual_std": 0.2709330916404724,
+    "target_correction_mean": 0.08401540666818619,
+    "target_correction_std": 0.3534816801548004,
+    "fit_split": "train"
+  },
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "max_epochs": 20,
+  "patience": 4,
+  "selected_epoch": 4,
+  "residual_generation_seconds": 56.503805718002695,
+  "training_time_seconds": 54.875328950998664,
+  "inference_time_ms_per_origin": 0.1457966889619504,
+  "pso": false,
+  "baseline_hashes_before": {
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/predictions/arima_gru_predictions.csv": "c7119d572e75627b0145aa592455d7330a240f6557f9a5da88a88b2524bbe008",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/residuals/train_oos_arima_residuals.csv": "272036f0089d917d68aa426ed37144457c8c0dd62112a06b869bf6a202afee79",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/checkpoints/arima_gru_validation_checkpoint.pt": "b9d01e2cdfee4c149acb789824cd9d6102265c58e47d7a398c5f1460cfc3c1bc",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/runs/arima_gru_manifest.json": "ee8a19addd9d8d3942048e2eccdaaa68da75950ef2347bb3ef63f1400261d370"
+  },
+  "baseline_hashes_after": {
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/predictions/arima_gru_predictions.csv": "c7119d572e75627b0145aa592455d7330a240f6557f9a5da88a88b2524bbe008",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/residuals/train_oos_arima_residuals.csv": "272036f0089d917d68aa426ed37144457c8c0dd62112a06b869bf6a202afee79",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/checkpoints/arima_gru_validation_checkpoint.pt": "b9d01e2cdfee4c149acb789824cd9d6102265c58e47d7a398c5f1460cfc3c1bc",
+    "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/review3/arima_gru_hybrid/runs/arima_gru_manifest.json": "ee8a19addd9d8d3942048e2eccdaaa68da75950ef2347bb3ef63f1400261d370"
+  },
+  "baseline_outputs_untouched": true
+}

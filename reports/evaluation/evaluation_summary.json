@@ -1,0 +1,59 @@
+{
+  "canonical_origins": {
+    "validation": {
+      "candidates": 77449,
+      "accepted": 43081,
+      "rejected": 34368,
+      "rejections_by_reason": {
+        "invalid_history_load": 31292,
+        "invalid_target_load": 1650,
+        "target_outside_split": 1426
+      }
+    },
+    "test": {
+      "candidates": 77546,
+      "accepted": 48089,
+      "rejected": 29457,
+      "rejections_by_reason": {
+        "invalid_history_load": 26854,
+        "target_outside_split": 1426,
+        "invalid_target_load": 1177
+      }
+    }
+  },
+  "validation_smoke_overall": [
+    {
+      "model": "SeasonalNaive_Daily",
+      "split": "validation",
+      "run_id": "seasonal_naive_validation_20260915T125313Z",
+      "MAE": 0.15681411662527178,
+      "RMSE": 0.30673968410483204,
+      "sMAPE_pct": 40.793422503553884,
+      "R2": 0.47563383882786936,
+      "NRMSE_mean": 0.7689202798092142,
+      "n_predictions": 1033944.0,
+      "peak_load_error": 0.17612297764675844,
+      "normalized_peak_error": 0.2581067094672348,
+      "peak_timing_error_hours": 5.512731830737448,
+      "inference_time_ms": 0.28083666631113946,
+      "aggregation": "pooled_predictions"
+    },
+    {
+      "model": "SeasonalNaive_Daily",
+      "split": "validation",
+      "run_id": "seasonal_naive_validation_20260915T125313Z",
+      "MAE": 0.15046666273736836,
+      "RMSE": 0.24299024099659808,
+      "sMAPE_pct": 43.80979845167033,
+      "R2": 0.07032850638580138,
+      "NRMSE_mean": 1.0984632068622466,
+      "n_predictions": NaN,
+      "peak_load_error": 0.17491788615947487,
+      "normalized_peak_error": 0.29923994310163254,
+      "peak_timing_error_hours": 5.452845368567994,
+      "inference_time_ms": 0.2812316672090701,
+      "aggregation": "macro_meter_mean"
+    }
+  ],
+  "note": "Validation smoke test only; no model ranking or test predictions."
+}

@@ -1,0 +1,6 @@
+city,meter,forecast_origin,reason
+Bareilly,BR20,2020-01-13 20:00:00,invalid_residual_history
+Bareilly,BR24,2020-09-27 01:00:00,invalid_residual_history
+Bareilly,BR39,2020-09-28 01:00:00,invalid_residual_history
+Bareilly,BR39,2020-11-01 01:00:00,invalid_residual_history
+Mathura,MH10,2020-09-27 01:00:00,invalid_residual_history

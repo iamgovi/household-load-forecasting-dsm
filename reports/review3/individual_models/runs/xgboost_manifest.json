@@ -1,0 +1,25 @@
+{
+  "model": "XGBoost",
+  "split": "validation",
+  "research_eligible": true,
+  "run_id": "XGBoost_validation",
+  "created_at_utc": "2026-09-15T16:33:29.335340+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_origins": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/validation_origins.csv",
+  "test_predictions_generated": false,
+  "lookback": 168,
+  "horizon": 24,
+  "training_time_seconds": 132.9322490250015,
+  "configuration": {
+    "n_estimators": 120,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "strategy": "direct multi-output",
+    "selection": "validation RMSE"
+  },
+  "successful_origins": 1799,
+  "failed_origins": 0,
+  "meters": 59
+}

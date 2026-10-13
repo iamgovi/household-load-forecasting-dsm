@@ -1,0 +1,42 @@
+{
+  "model": "ARIMA-GRU",
+  "research_eligible": true,
+  "split": "validation",
+  "run_id": "ARIMA-GRU_validation_1789492763",
+  "created_at_utc": "2026-09-15T17:19:32.026188+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/validation.csv",
+  "validation_origins": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/validation_origins.csv",
+  "test_data_loaded": false,
+  "test_predictions_generated": false,
+  "arima_specification": "conditional least-squares ARIMA(3,0,0)",
+  "residual_generation": "expanding prequential OLS; predict before target update",
+  "warmup_equations": 168,
+  "training_origin_stride_hours": 24,
+  "training_residual_rows": 286079,
+  "training_windows": 8289,
+  "canonical_validation_origins": 1799,
+  "successful_validation_origins": 1794,
+  "failed_validation_origins": 5,
+  "meters": 58,
+  "residual_generation_seconds": 54.02926412200031,
+  "training_time_seconds": 176.05503395400228,
+  "inference_time_ms_per_origin": 0.09107824358942807,
+  "architecture": "unidirectional 1-layer residual-only GRU, 32 hidden, direct 24 output",
+  "parameter_count": 4152,
+  "scaler": {
+    "input_residual_mean": 0.03395071253180504,
+    "input_residual_std": 0.2709330916404724,
+    "target_correction_mean": 0.08401540666818619,
+    "target_correction_std": 0.3534816801548004,
+    "fit_split": "train"
+  },
+  "early_stopping": {
+    "split": "validation",
+    "patience": 4,
+    "max_epochs": 20,
+    "selected_epoch": 19
+  },
+  "attention": false,
+  "pso": false
+}

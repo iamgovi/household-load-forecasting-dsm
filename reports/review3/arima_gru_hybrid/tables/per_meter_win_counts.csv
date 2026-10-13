@@ -1,0 +1,5 @@
+Baseline,Common_Meters,Hybrid_lower_MAE_meters,Hybrid_lower_RMSE_meters
+ARIMA,58,54,52
+GRU,58,46,49
+LinearRegression,58,5,4
+XGBoost,58,4,4

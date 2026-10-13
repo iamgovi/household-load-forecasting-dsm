@@ -1,0 +1,25 @@
+{
+  "status": "limited_runtime_attempt",
+  "configuration": {
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      0,
+      24
+    ],
+    "maxiter": 20
+  },
+  "meters": 1,
+  "requested_origins": 2,
+  "successful_origins": 2,
+  "failures": 0,
+  "fit_seconds": 8.252474913002516,
+  "wall_seconds": 8.359849906999443,
+  "included_in_master_comparison": false,
+  "reason": "Full 62-meter run deferred if measured single-meter fit is excessive for Review 3."
+}

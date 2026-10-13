@@ -1,0 +1,62 @@
+{
+  "run_id": "seasonal_naive_validation_20260915T125313Z",
+  "created_at_utc": "2026-09-15T12:53:13.923116+00:00",
+  "model": "SeasonalNaive_Daily",
+  "split": "validation",
+  "research_eligible": true,
+  "prediction_path": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/seasonal_naive_validation_predictions.csv",
+  "data_paths": {
+    "train": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+    "validation": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/validation.csv",
+    "test": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/test.csv"
+  },
+  "frequency": "1h",
+  "forecast_horizon": 24,
+  "lookback": 168,
+  "meter_count": 59,
+  "forecast_origin_count": 43081,
+  "canonical_origin_counts": {
+    "validation": {
+      "candidates": 77449,
+      "accepted": 43081,
+      "rejected": 34368,
+      "rejections_by_reason": {
+        "invalid_history_load": 31292,
+        "invalid_target_load": 1650,
+        "target_outside_split": 1426
+      }
+    },
+    "test": {
+      "candidates": 77546,
+      "accepted": 48089,
+      "rejected": 29457,
+      "rejections_by_reason": {
+        "invalid_history_load": 26854,
+        "target_outside_split": 1426,
+        "invalid_target_load": 1177
+      }
+    }
+  },
+  "metric_definitions": {
+    "MAE": "mean(abs(prediction - actual))",
+    "RMSE": "sqrt(mean((prediction - actual)^2))",
+    "sMAPE_pct": "mean(200*abs(prediction-actual)/(abs(actual)+abs(prediction))); zero/zero contributes 0",
+    "R2": "1-SSE/SST on the stated group; NaN when actual variance is zero or group has fewer than 2 rows",
+    "NRMSE_mean": "RMSE/mean(actual); NaN when mean(actual) <= 0",
+    "peak_load_error": "per-origin abs(max(actual_24h)-max(prediction_24h))",
+    "normalized_peak_error": "peak_load_error/max(actual_24h); NaN when actual peak is zero",
+    "peak_timing_error_hours": "absolute difference between first actual and predicted peak horizons",
+    "inference_time_ms": "measured model prediction time, aggregated as mean per origin where available"
+  },
+  "seasonal_naive_definition": "prediction(t+h) = actual(t+h-24), h=1..24",
+  "seed": 42,
+  "git_commit": "UNAVAILABLE",
+  "deployment_non_research_artifacts": [
+    "general_gru_model.pt",
+    "general_model_meta.joblib",
+    "preprocess/generate_model.py",
+    "train_general_model.py",
+    "forecast_model.py"
+  ],
+  "test_predictions_generated": false
+}

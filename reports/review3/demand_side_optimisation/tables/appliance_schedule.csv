@@ -1,0 +1,5 @@
+Appliance,Power_kW,Duration_h,Allowed_Window,Interruptible,Baseline_Start,Optimised_Start,Baseline_Hours,Optimised_Hours,Baseline_Slots,Optimised_Slots,Energy_kWh,Assumption_Source
+Washing Machine,0.8,2,08:00–20:00,False,9,16,"9,10","16,17","5,6","12,13",1.6,ILLUSTRATIVE / SIMULATED
+Dishwasher,1.0,2,18:00–24:00,False,19,22,"19,20","22,23","15,16","18,19",2.0,ILLUSTRATIVE / SIMULATED
+Water Heater,2.0,1,05:00–09:00,False,7,7,7,7,3,3,2.0,ILLUSTRATIVE / SIMULATED
+Water Pump,1.0,1,06:00–18:00,False,12,17,12,17,8,13,1.0,ILLUSTRATIVE / SIMULATED

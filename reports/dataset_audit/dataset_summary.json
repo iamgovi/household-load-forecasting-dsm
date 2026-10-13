@@ -1,0 +1,33 @@
+{
+  "generated_from": [
+    "archive (1)/CEEW - Smart meter data Bareilly 2020.csv",
+    "archive (1)/CEEW - Smart meter data Mathura 2020.csv"
+  ],
+  "dataset_source": "UNVERIFIED",
+  "source_url": "UNVERIFIED",
+  "licence": "UNVERIFIED",
+  "timezone": "UNVERIFIED",
+  "load_semantics_authoritative": "UNVERIFIED",
+  "observed_cities": [
+    "Bareilly",
+    "Mathura"
+  ],
+  "raw_meter_count": 84,
+  "retained_meter_count_current_splits": 62,
+  "retention_rule_in_pipeline": ">=60% rows expected over each meter's observed span at 3-minute frequency",
+  "timestamp_column": "x_Timestamp",
+  "load_column": "t_kWh",
+  "unit_from_column_label": "kWh",
+  "dominant_sampling_interval_seconds": 180,
+  "raw_date_min": "2020-01-01 00:00:00",
+  "raw_date_max": "2020-12-31 23:57:00",
+  "duplicate_timestamps": 0,
+  "out_of_order_timestamps": 0,
+  "gap_events": 2404,
+  "estimated_missing_3min_intervals": 3585120,
+  "negative_load_values": 0,
+  "zero_load_values": 1848854,
+  "weighted_pct_consecutive_load_decreases": 29.9272,
+  "t_kWh_interpretation": "Empirically consistent with per-interval energy, not a cumulative counter; authoritative definition UNVERIFIED",
+  "hourly_aggregation_assessment": "SUM is scientifically appropriate if t_kWh is interval energy; conditional on authoritative unit verification"
+}

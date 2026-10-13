@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Office/temp lock files
+.~lock.*
+*.swp
+*.swo
+
+# Raw / large datasets
+archive*/
+data/raw/
+*.parquet
+
+# Research split data - regenerate locally
+data/research/*.csv
+
+# Legacy root-level split data
+train.csv
+val.csv
+test.csv
+
+# Model/checkpoint artifacts
+*.pt
+*.pth
+*.h5
+*.keras
+*.joblib
+*.npz
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Cache / runtime
+.cache/
+tmp/
+logs/
+
+# Generated detailed prediction artifacts
+reports/**/predictions/
+reports/**/residuals/*.csv
+
+# Large generated attention arrays
+reports/**/attention_weights/*.npz
+# Large generated prediction artifacts
+reports/**/predictions/
+reports/**/*_predictions.csv
+reports/evaluation/seasonal_naive_validation_predictions.csv
+
+# Generated schedule arrays
+reports/**/schedule_arrays.npz
+

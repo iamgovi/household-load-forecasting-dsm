@@ -1,0 +1,3 @@
+n_estimators,max_depth,learning_rate,subsample,colsample_bytree,validation_RMSE,training_seconds
+120,4,0.05,0.9,0.9,0.255951361765283,25.60598783000023
+200,6,0.05,0.9,0.9,0.259306482735833,107.32626119500128

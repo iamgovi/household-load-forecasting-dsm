@@ -1,0 +1,3 @@
+trend,damped_trend,validation_RMSE,fit_seconds
+True,False,0.41653351438307823,1689.1172604199965
+True,True,0.416369635840574,1173.0095151999994

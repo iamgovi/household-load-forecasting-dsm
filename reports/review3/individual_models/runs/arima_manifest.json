@@ -1,0 +1,24 @@
+{
+  "model": "ARIMA",
+  "split": "validation",
+  "research_eligible": true,
+  "run_id": "ARIMA_validation",
+  "created_at_utc": "2026-09-15T16:59:22.190554+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_origins": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/validation_origins.csv",
+  "test_predictions_generated": false,
+  "lookback": 168,
+  "horizon": 24,
+  "training_time_seconds": 587.5570595969839,
+  "configuration": {
+    "order": [
+      2,
+      1,
+      2
+    ],
+    "selection": "lowest RMSE on first 5 meters, first 2 validation origins"
+  },
+  "successful_origins": 1691,
+  "failed_origins": 108,
+  "meters": 55
+}

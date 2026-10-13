@@ -1,0 +1,27 @@
+{
+  "model": "GRU",
+  "split": "validation",
+  "research_eligible": true,
+  "run_id": "GRU_validation",
+  "created_at_utc": "2026-09-15T16:35:53.624592+00:00",
+  "train_data": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/data/research/train.csv",
+  "validation_origins": "/home/stackdev_24/Downloads/arima_gru_results_per_meter/reports/evaluation/validation_origins.csv",
+  "test_predictions_generated": false,
+  "lookback": 168,
+  "horizon": 24,
+  "training_time_seconds": 87.34174511400124,
+  "configuration": {
+    "hidden_size": 32,
+    "layers": 1,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "max_epochs": 20,
+    "patience": 4,
+    "parameter_count": 4632,
+    "scaler_fit": "train only",
+    "architecture": "unidirectional direct 168-to-24"
+  },
+  "successful_origins": 1799,
+  "failed_origins": 0,
+  "meters": 59
+}

@@ -1,0 +1,7 @@
+Model,Meters,Raw_Successful_Origins,Failed_Origins,Common_Origins,Common_Meters
+SeasonalNaive_Daily,59,1799,0,1799,59
+HoltWinters,59,1799,0,1799,59
+ARIMA,59,1799,0,1799,59
+LinearRegression,59,1799,0,1799,59
+XGBoost,59,1799,0,1799,59
+GRU,59,1799,0,1799,59
