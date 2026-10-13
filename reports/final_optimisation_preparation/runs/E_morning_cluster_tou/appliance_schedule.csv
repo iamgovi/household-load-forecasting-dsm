@@ -1,0 +1,6 @@
+appliance_id,name,power_kw,duration_h,energy_kwh,allowed_window,interruptible,start_before,start_after,hours_before,hours_after,moved,shifted_energy_kwh,scheduling_cost_before,scheduling_cost_after,source_class
+washing_machine,Washing Machine,0.8,2,1.6,08:00–20:00,False,8,8,"8,9","8,9",False,0.0,9.600000000000001,9.600000000000001,SIMULATION / LITERATURE-BASED ASSUMPTION
+dishwasher,Dishwasher,1.0,2,2.0,18:00–24:00,False,19,22,"19,20","22,23",True,2.0,18.0,9.0,SIMULATION / LITERATURE-BASED ASSUMPTION
+water_heater,Water Heater (Geyser),2.0,1,2.0,05:00–09:00,False,7,7,7,7,False,0.0,12.0,12.0,SIMULATION / LITERATURE-BASED ASSUMPTION
+water_pump,Water Pump,1.0,1,1.0,06:00–18:00,False,7,17,7,17,True,1.0,6.0,6.0,SIMULATION / LITERATURE-BASED ASSUMPTION
+ev_2w_charger,EV Two-Wheeler Charging,0.7,3,2.0999999999999996,22:00–06:00,True,22,0,"22,23,0","0,2,3",True,1.4,9.1,8.399999999999999,SIMULATION / LITERATURE-BASED ASSUMPTION

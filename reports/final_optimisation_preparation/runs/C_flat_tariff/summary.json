@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "cost_before": 106.52731926000001,
+    "cost_after": 106.52731926000001,
+    "cost_saving": 0.0,
+    "cost_reduction_pct": 0.0,
+    "peak_before": 2.34056777,
+    "peak_after": 2.34056777,
+    "peak_reduction_pct": 0.0,
+    "par_before": 3.1638997509867495,
+    "par_after": 3.1638997509867495,
+    "par_reduction_pct": 0.0,
+    "shifted_energy": 0.0,
+    "net_profile_shift_kwh": 0.0,
+    "energy_before_kwh": 17.75455321,
+    "energy_after_kwh": 17.75455321,
+    "appliance_energy_kwh": 8.7,
+    "energy_conserved": true,
+    "cost_responsive": false,
+    "cost_note": "Tariff is not time-varying: shifting cannot change the bill; only peak/PAR effects are claimed.",
+    "baseline_exceeds_max_load": false,
+    "solver_status": "optimal",
+    "runtime": 0.052859899995382875,
+    "objective_value": 0.7681135539999999
+  },
+  "metadata": {
+    "solver": {
+      "solver": "HiGHS (branch-and-cut) via scipy.optimize.milp, SciPy 1.18.1",
+      "method": "branch-and-cut (HiGHS MIP)",
+      "n_variables": 153,
+      "n_binary": 152,
+      "n_constraints": 149,
+      "stage1_status": "optimal",
+      "stage1_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "stage2_used": true,
+      "stage2_status": "optimal",
+      "solver_status": "optimal",
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "objective_value": 0.7681135539999999,
+      "objective_value_final_schedule": 0.7681135539999999,
+      "runtime": 0.052859899995382875
+    },
+    "tariff": {
+      "tariff_type": "flat",
+      "label": "ILLUSTRATIVE FLAT 6.0 INR/kWh - NOT OFFICIAL - synthetic validation only",
+      "is_official": false,
+      "source": "",
+      "effective_from": null,
+      "effective_to": null,
+      "fixed_charge_per_horizon": 0.0,
+      "currency": "INR",
+      "rate": 6.0
+    },
+    "household": {
+      "max_power_kw": 3.5,
+      "w_cost": 0.3,
+      "w_peak": 0.7,
+      "lexicographic_tie_break": true,
+      "preferences": {},
+      "source_class": "SIMULATION / LITERATURE-BASED ASSUMPTION"
+    },
+    "forecast_start": "2020-09-06 04:00:00",
+    "forecast_end": "2020-09-07 03:00:00",
+    "appliance_source_classes": [
+      "SIMULATION / LITERATURE-BASED ASSUMPTION"
+    ],
+    "renewable_metrics_included": false,
+    "carbon_metrics_included": false
+  }
+}

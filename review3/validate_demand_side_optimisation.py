@@ -9,8 +9,15 @@ from review3.demand_side_optimisation import (APPLIANCES,CONFIGS,FORECAST_MODEL,
 class DSOValidation(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.arr=np.load(RUNS/"schedule_arrays.npz"); cls.before=cls.arr["before"]; cls.after=cls.arr["after"]
-        cls.base=cls.arr["base"]; cls.tariff=cls.arr["tariff"]
+        if (RUNS/"schedule_arrays.npz").exists():
+            cls.arr=np.load(RUNS/"schedule_arrays.npz"); cls.before=cls.arr["before"]; cls.after=cls.arr["after"]
+            cls.base=cls.arr["base"]; cls.tariff=cls.arr["tariff"]
+        else:  # schedule_arrays.npz is gitignored: rebuild from the committed tables so a fresh clone can validate
+            hourly=pd.read_csv(SCHEDULES/"hourly_before_after_schedule.csv"); table=pd.read_csv(TABLES/"appliance_schedule.csv")
+            cls.base=hourly.base_forecast_kwh.to_numpy(float); cls.tariff=hourly.tariff_inr_per_kwh.to_numpy(float)
+            cls.before=np.zeros((len(APPLIANCES),24),dtype=int); cls.after=np.zeros((len(APPLIANCES),24),dtype=int)
+            for i,row in table.reset_index(drop=True).iterrows():
+                cls.before[i,[int(x) for x in str(row.Baseline_Slots).split(",")]]=1; cls.after[i,[int(x) for x in str(row.Optimised_Slots).split(",")]]=1
         cls.summary=pd.read_csv(TABLES/"optimisation_summary.csv").set_index("Metric")
         cls.manifest=json.loads((RUNS/"optimisation_manifest.json").read_text())
 

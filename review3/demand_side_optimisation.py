@@ -44,8 +44,13 @@ def tariff_table(timestamps=None):
     return pd.DataFrame(rows)
 
 
+SAVED_EXAMPLE_FORECAST=OUTPUT/"schedules"/"source_forecast_24h.csv"
+
+
 def load_forecast():
-    predictions=pd.read_csv(FORECAST_FILE,parse_dates=["forecast_origin","target_timestamp"])
+    # The full prediction table is gitignored; fall back to the committed 24-hour example so a fresh clone runs.
+    source=FORECAST_FILE if FORECAST_FILE.exists() else SAVED_EXAMPLE_FORECAST
+    predictions=pd.read_csv(source,parse_dates=["forecast_origin","target_timestamp"])
     subset=predictions[predictions.model.eq(FORECAST_MODEL)].sort_values(["meter","forecast_origin","horizon"])
     first=subset[["city","meter","forecast_origin"]].drop_duplicates().iloc[0]
     selected=subset[(subset.city.eq(first.city))&(subset.meter.eq(first.meter))&(subset.forecast_origin.eq(first.forecast_origin))].sort_values("horizon")

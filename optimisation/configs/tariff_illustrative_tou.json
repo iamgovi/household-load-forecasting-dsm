@@ -1,0 +1,12 @@
+{
+  "tariff_type": "tou",
+  "label": "ILLUSTRATIVE TARIFF - NOT OFFICIAL - TEST/SYNTHETIC VALIDATION ONLY (Review-3 Indian ToU scenario)",
+  "is_official": false,
+  "source": "",
+  "periods": [
+    {"name": "Off-peak", "start_hour": 0, "end_hour": 6, "rate": 4.0},
+    {"name": "Normal", "start_hour": 6, "end_hour": 18, "rate": 6.0},
+    {"name": "Peak", "start_hour": 18, "end_hour": 22, "rate": 9.0},
+    {"name": "Off-peak (late)", "start_hour": 22, "end_hour": 0, "rate": 4.5}
+  ]
+}

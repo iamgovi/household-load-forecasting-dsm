@@ -1,0 +1,16 @@
+{
+  "_instructions": "Govardhan: copy this file, fill ONE of the blocks below, set is_official=true ONLY with a source citation. Delete unused keys.",
+  "tariff_type": "flat | tou | slab",
+  "label": "e.g. <DISCOM> domestic LT-1A, order dated <date>",
+  "is_official": false,
+  "source": "URL / order number / page",
+  "effective_from": "YYYY-MM-DD",
+  "effective_to": null,
+  "fixed_charge_per_horizon": 0.0,
+  "rate": "flat only: INR/kWh",
+  "periods": "tou only: [{\"name\":..., \"start_hour\":0, \"end_hour\":6, \"rate\":...}, ...] covering all 24 h",
+  "slabs": "slab only: [{\"upto_kwh\":100, \"rate\":0.0}, ..., {\"upto_kwh\":null, \"rate\":...}]",
+  "telescopic": "slab only: true/false",
+  "prior_cycle_kwh": "slab only: kWh already used this billing cycle",
+  "billing_cycle_days": "slab only: e.g. 30 or 60"
+}

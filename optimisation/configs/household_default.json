@@ -1,0 +1,7 @@
+{
+  "max_power_kw": 3.5,
+  "w_cost": 0.3,
+  "w_peak": 0.7,
+  "lexicographic_tie_break": true,
+  "source_class": "SIMULATION / LITERATURE-BASED ASSUMPTION"
+}
